@@ -7,6 +7,7 @@ const refs = {
   buttonStart: document.querySelector('button[data-start]'),
   buttonStop: document.querySelector('button[data-stop]'),
 };
+let intervalId = null;
 
 const onStart = () => {
   refs.buttonStart.disabled = true;
